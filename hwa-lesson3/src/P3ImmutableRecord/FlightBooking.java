@@ -5,6 +5,7 @@ record FlightBooking(String origin, String destination, double distanceKm) {
         if (origin == null || destination == null || distanceKm <= 0)
             throw new IllegalArgumentException("Invalid input");
     }
+
     public double computeFlightTime(double avgSpeed) {
         return distanceKm / avgSpeed;
     }
