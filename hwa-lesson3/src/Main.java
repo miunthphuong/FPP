@@ -1,6 +1,6 @@
-import P1ClassObjects.Address;
-import P1ClassObjects.Customer;
+import P1ClassObjects.P1Main;
 import P2TimeZones.TimeZone;
+import P3ImmutableRecord.TravelMain;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -14,40 +14,22 @@ void main() {
 // Solve the problem 1
 void p1ClassProjects (){
     System.out.println("=======PROBLEM 1:=======");
-    //Create Customer instances
-    Customer cus1 = new Customer("Phuong", "Nguyen", "12345");
-    Customer cus2 = new Customer("Amr", "Sami", "67890");
-    Customer cus3 = new Customer("Steven", "Jobs", "11111");
-    Customer[] cusArray = {cus1, cus2, cus3};
-
-    //Create Address instances
-    Address add1 = new Address("street 1", "Fairfield", "Iowa", "11111");
-    Address add2 = new Address("street 2", "Chicago", "Illinois", "22222");
-    Address add3 = new Address("street 3", "Dallas", "Texas", "33333");
-
-    cus1.setBillingAddress(add1); // Fairfield
-    cus2.setBillingAddress(add2); // Chicago
-    cus3.setBillingAddress(add3); // Dallas
-
-    System.out.println("Customers with billing address in Chicago:");
-    for(Customer cus: cusArray) {
-        if (cus.getBillingAddress() != null && cus.getBillingAddress().getCity().equalsIgnoreCase("Chicago")) {
-            System.out.println(cus.toString());
-        }
-    }
+    P1Main p1 = new P1Main();
+    p1.display();
 }
 
 // Solve the problem 2
 void p2TimeZones(){
     System.out.println("=======PROBLEM 2:=======");
     TimeZone timeZone = new TimeZone();
-    timeZone.display();
+    TimeZone.display();
 }
 
 // Solve the problem 3
 void P3ImmutableRecord(){
     System.out.println("=======PROBLEM 3:=======");
-
+    TravelMain travelMain = new TravelMain();
+    travelMain.display();
 }
 
 // Solve the problem 4
