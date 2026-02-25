@@ -15,7 +15,7 @@ void p1ClassProjects (){
     //Create Customer instances
     Customer cus1 = new Customer("Phuong", "Nguyen", "12345");
     Customer cus2 = new Customer("Amr", "Sami", "67890");
-    Customer cus3 = new Customer("Phuong", "Nguyen", "12345");
+    Customer cus3 = new Customer("Steven", "Jobs", "11111");
     Customer[] cusArray = {cus1, cus2, cus3};
 
     //Create Address instances
