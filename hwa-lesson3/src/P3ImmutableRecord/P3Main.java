@@ -10,7 +10,7 @@ public class P3Main {
         Scanner sc = new Scanner(System.in);
         String choice;
         do {
-            System.out.println("Enter F for Flight, H for Hotel, C for Car Rental:");
+            System.out.println("Enter F for Flight Booking, H for Hotel Booking, C for Car Rental:");
             choice = sc.next().toUpperCase();
             switch (choice) {
                 case "F" -> {
