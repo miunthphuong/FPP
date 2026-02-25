@@ -1,13 +1,15 @@
 package P2TimeZones;
-
-import javax.swing.text.DateFormatter;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class problem2 {
+public class TimeZone {
     static void main() {
+        display();
+    }
+
+    public static void display(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the event Name");
         String name = sc.next();
@@ -19,14 +21,6 @@ public class problem2 {
         LocalTime formattedTime = LocalTime.parse(time);
 
         Event event = new Event(name,formattedDate,formattedTime);
-
         event.displayDetails();
-
-
-
-
-
     }
-
-
 }

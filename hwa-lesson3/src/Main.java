@@ -1,5 +1,7 @@
 import P1ClassObjects.Address;
 import P1ClassObjects.Customer;
+import P2TimeZones.TimeZone;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
@@ -24,13 +26,8 @@ void p1ClassProjects (){
     Address add3 = new Address("street 3", "Dallas", "Texas", "33333");
 
     cus1.setBillingAddress(add1); // Fairfield
-    cus1.setShippingAddress(add1);
-
     cus2.setBillingAddress(add2); // Chicago
-    cus2.setShippingAddress(add2);
-
     cus3.setBillingAddress(add3); // Dallas
-    cus3.setShippingAddress(add3);
 
     System.out.println("Customers with billing address in Chicago:");
     for(Customer cus: cusArray) {
@@ -43,7 +40,8 @@ void p1ClassProjects (){
 // Solve the problem 2
 void p2TimeZones(){
     System.out.println("=======PROBLEM 2:=======");
-
+    TimeZone timeZone = new TimeZone();
+    timeZone.display();
 }
 
 // Solve the problem 3
