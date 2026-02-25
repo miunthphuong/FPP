@@ -45,9 +45,11 @@ public class TravelMain {
                     System.out.print("Enter miles/day: ");
                     double mi = sc.nextDouble();
                     CarRental c = new CarRental(m, days, r, mi);
-                    System.out.printf("Total Rental Cost: %.2f\n" +
-                                        "Total Miles: %.2f\n",
-                                        c.totalRentalCost(), c.totalMilesAllowed());
+                    System.out.printf("""
+                                    Total Rental Cost: %.2f
+                                    Total Miles: %.2f
+                                    """,
+                                    c.totalRentalCost(), c.totalMilesAllowed());
                 }
             }
             System.out.print("Do you want to continue (y/n)? ");
