@@ -1,7 +1,7 @@
 package P3ImmutableRecord;
 import java.util.Scanner;
 
-public class TravelMain {
+public class P3Main {
     void main() {
         display();
     }
