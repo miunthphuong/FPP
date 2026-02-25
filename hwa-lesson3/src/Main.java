@@ -1,14 +1,17 @@
 import P1ClassObjects.Address;
 import P1ClassObjects.Customer;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
     this.p1ClassProjects();
+    this.p2TimeZones();
+    this.P3ImmutableRecord();
+    this.P4PizzaOrderManagement();
 }
 
 // Solve the problem 1
 void p1ClassProjects (){
+    System.out.println("=======PROBLEM 1:=======");
     //Create Customer instances
     Customer cus1 = new Customer("Phuong", "Nguyen", "12345");
     Customer cus2 = new Customer("Amr", "Sami", "67890");
@@ -35,4 +38,22 @@ void p1ClassProjects (){
             System.out.println(cus.toString());
         }
     }
+}
+
+// Solve the problem 2
+void p2TimeZones(){
+    System.out.println("=======PROBLEM 2:=======");
+
+}
+
+// Solve the problem 3
+void P3ImmutableRecord(){
+    System.out.println("=======PROBLEM 3:=======");
+
+}
+
+// Solve the problem 4
+void P4PizzaOrderManagement(){
+    System.out.println("=======PROBLEM 4:=======");
+
 }
