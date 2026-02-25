@@ -1,6 +1,4 @@
 package P1ClassObjects;
-import P1ClassObjects.Address;
-import P1ClassObjects.Customer;
 
 public class P1Main {
     void main()
