@@ -21,6 +21,9 @@ public class P2Main {
         LocalTime formattedTime = LocalTime.parse(time);
 
         Event event = new Event(name,formattedDate,formattedTime);
+        event.displayDayOfWeek();
+        event.isLeapYear();
+        event.currentToEventDays();
         event.displayDetails();
     }
 }
