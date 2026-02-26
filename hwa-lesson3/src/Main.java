@@ -1,6 +1,7 @@
 import P1ClassObjects.P1Main;
 import P2TimeZones.P2Main;
 import P3ImmutableRecord.P3Main;
+import P4PizzaOrderManagement.P4Main;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -35,5 +36,6 @@ void P3ImmutableRecord(){
 // Solve the problem 4
 void P4PizzaOrderManagement(){
     System.out.println("=======PROBLEM 4:=======");
-
+    P4Main p4Main = new P4Main();
+    p4Main.display();
 }

@@ -30,10 +30,10 @@ public class P3Main {
                     String n = sc.next();
                     System.out.print("Enter nights: ");
                     int nights = sc.nextInt();
-                    System.out.print("Enter price: ");
+                    System.out.print("Enter price ($): ");
                     double p = sc.nextDouble();
                     HotelBooking h = new HotelBooking(n, nights, p);
-                    System.out.printf("Total Hotel Cost: %.2f\n", h.totalCost());
+                    System.out.printf("Total Hotel Cost: $%.2f\n", h.totalCost());
                 }
                 case "C" -> {
                     System.out.print("Enter car model: ");
@@ -46,7 +46,7 @@ public class P3Main {
                     double mi = sc.nextDouble();
                     CarRental c = new CarRental(m, days, r, mi);
                     System.out.printf("""
-                                    Total Rental Cost: %.2f
+                                    Total Rental Cost: $%.2f
                                     Total Miles: %.2f
                                     """,
                                     c.totalRentalCost(), c.totalMilesAllowed());
