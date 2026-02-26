@@ -1,9 +1,6 @@
 package P2TimeZones;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class Event {
@@ -36,4 +33,26 @@ public class Event {
 
         System.out.println(day + ", "+ dateAsString +" @ "+ time.toString() +" [" +ZoneId.systemDefault().getId()+ " ]");
     }
+
+    void convertToTimeZone(String targetZone) {
+
+            ZoneId systemZone = ZoneId.systemDefault();
+            ZoneId newZone = ZoneId.of(targetZone);
+
+            ZonedDateTime eventDateTime =
+                    ZonedDateTime.of(date, time, systemZone);
+
+            ZonedDateTime converted =
+                    eventDateTime.withZoneSameInstant(newZone);
+
+            DateTimeFormatter formatter =
+                    DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy @ HH:mm");
+
+            System.out.println("Converted Time:");
+            System.out.println(converted.format(formatter) + " [" + newZone.getId() + "]");
+    }
+
+
+
+
 }

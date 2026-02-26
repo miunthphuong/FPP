@@ -25,5 +25,10 @@ public class P2Main {
         event.isLeapYear();
         event.currentToEventDays();
         event.displayDetails();
+
+        System.out.println("\nEnter Time Zone to Convert (Example: America/Chicago):");
+        String zone = sc.next();
+        event.convertToTimeZone(zone);
+
     }
 }
