@@ -1,0 +1,5 @@
+Try individually the Interview problems from leetcode.com, Neet code, or Hacker Rank at least two
+problems related to Arrays, Strings and Math problems using Recursion. You can talk about your
+logic with your class members. Not necessary to submit.
+
+-----------------------
