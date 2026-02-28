@@ -1,10 +1,6 @@
 package P2Reversing;
-
-import P1MinimumCharacter.P1Main;
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class P2MainTest {

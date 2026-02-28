@@ -2,7 +2,7 @@ package P1MinimumCharacter;
 
 public class P1Main {
     public static void main(String[] args) {
-        String input = "MinString";
+        String input = "MinCharacterInString";
         char result = findMinCharacter(input, 0);
         System.out.println("The minimum character in the string \"" + input + "\" is: '" + result + "'");
     }
@@ -14,9 +14,7 @@ public class P1Main {
         if (index == str.length() - 1) {
             return str.charAt(index);
         }
-        
         char minRemainder = findMinCharacter(str, index + 1);
-
         if (str.charAt(index) < minRemainder) {
             return str.charAt(index);
         } else {

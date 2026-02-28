@@ -1,11 +1,9 @@
 package P1MinimumCharacter;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class P1MainTest {
-    @org.junit.jupiter.api.Test
+    @Test
     void findMinCharacter_1() {
         String input = "MinString";
         char result = P1Main.findMinCharacter(input, 0);
@@ -13,7 +11,7 @@ public class P1MainTest {
         assertEquals(expectResult, result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void findMinCharacter_2() {
         String input = "akel";
         char result = P1Main.findMinCharacter(input, 0);
@@ -21,7 +19,7 @@ public class P1MainTest {
         assertEquals(expectResult, result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void findMinCharacter_3() {
         String input = "13213214sdfdsfsd";
         char result = P1Main.findMinCharacter(input, 0);
@@ -29,7 +27,7 @@ public class P1MainTest {
         assertEquals(expectResult, result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void findMinCharacter_4() {
         String input = "  24132@%dfads~~dfsd";
         char result = P1Main.findMinCharacter(input, 0);
@@ -37,7 +35,7 @@ public class P1MainTest {
         assertEquals(expectResult, result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void findMinCharacter_5() {
         String input = "";
         char result = P1Main.findMinCharacter(input, 0);
