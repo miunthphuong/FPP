@@ -8,6 +8,9 @@ public class P1Main {
     }
 
     public static char findMinCharacter(String str, int index) {
+        if (str.isEmpty()) {
+            return '\u0000';
+        }
         if (index == str.length() - 1) {
             return str.charAt(index);
         }
@@ -20,4 +23,5 @@ public class P1Main {
             return minRemainder;
         }
     }
+
 }
