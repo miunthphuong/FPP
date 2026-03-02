@@ -1,5 +1,7 @@
 package P1ProductPricingSystem;
 
+import java.time.Month;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class P1MainTest {
@@ -17,20 +19,19 @@ class P1MainTest {
     }
 
     public static void main(String[] args) {
-        // Create array Product, store 5 objects
         Product[] products = new Product[3];
         products[0] = new Clothing("Product Clothing A", 100,"brand A" , 20);
-        products[1] = new Electronics("Product Clothing B", 200,12 , 20);
+        products[1] = new Electronics("Product Clothing B", 200, Month.DECEMBER , 20);
         products[2] = new Furniture("Product Clothing C", 300,"Material C" , 20);
 
-        // Loop print status (toString override)
         System.out.println("Product list:");
         for (Product p : products) {
-            if (p != null)
-                System.out.println("Price of product " + p.getProductName() + "is : " + p.getPrice());
+            if (p != null){
+                System.out.println(p);
+                System.out.println("Price for sale is : " + p.getPrice() + "\n");
+                }
         }
 
-        // Calculate sum
         double total = sumProducts(products);
         System.out.println("Total price = " + total);
     }

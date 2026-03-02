@@ -1,8 +1,8 @@
 package P1ProductPricingSystem;
 
 public class Product {
-    private String productName;
-    private double price;
+    protected String productName;
+    protected double price;
 
     public Product() {}
 
@@ -12,12 +12,9 @@ public class Product {
     }
 
     public String getProductName() {
-        return productName;
+        return this.productName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
 
     public double getPrice() {
         return price;
@@ -27,4 +24,8 @@ public class Product {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Product Name: " + productName + ", Price: " + price;
+    }
 }
