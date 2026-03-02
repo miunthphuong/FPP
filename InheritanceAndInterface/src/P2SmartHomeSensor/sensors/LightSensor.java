@@ -1,4 +1,4 @@
-package P4ObjectOriented.sensors;
+package P2SmartHomeSensor.sensors;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

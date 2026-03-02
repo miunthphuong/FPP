@@ -1,9 +1,9 @@
-package P4ObjectOriented;
+package P2SmartHomeSensor;
 
-import P4ObjectOriented.sensors.LightSensor;
-import P4ObjectOriented.sensors.Sensor;
-import P4ObjectOriented.sensors.SoundSensor;
-import P4ObjectOriented.sensors.TemparatureSensor;
+import P2SmartHomeSensor.sensors.LightSensor;
+import P2SmartHomeSensor.sensors.Sensor;
+import P2SmartHomeSensor.sensors.SoundSensor;
+import P2SmartHomeSensor.sensors.TemparatureSensor;
 
 public class sensorTest {
     static void main() {

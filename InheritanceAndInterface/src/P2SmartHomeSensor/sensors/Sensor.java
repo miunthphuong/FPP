@@ -1,4 +1,4 @@
-package P4ObjectOriented.sensors;
+package P2SmartHomeSensor.sensors;
 
 public interface Sensor {
     String getSensorType();

@@ -1,33 +1,33 @@
-package P4ObjectOriented.sensors;
+package P2SmartHomeSensor.sensors;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class SoundSensor implements Sensor {
-    String lastupdated;
-    int soundLevel;
+public class TemparatureSensor implements Sensor {
+    private String lastupdated;
+    double temperature;
     String location;
 
-    public SoundSensor(int soundLevel, String location) {
-        this.soundLevel = soundLevel;
+    public TemparatureSensor(double temperature, String location) {
+        this.temperature = temperature;
         this.location = location;
     }
 
-
     @Override
     public String getSensorType() {
-        return "Sound Sensor";
+        return "Temperature Sensor";
     }
 
     @Override
     public double getReading() {
-        return soundLevel;
+        return temperature;
     }
 
     @Override
     public String getLocation() {
         return location;
     }
+
 
     @Override
     public String getLastUpdated() {
@@ -37,10 +37,12 @@ public class SoundSensor implements Sensor {
 
     @Override
     public String performAction() {
-        if (soundLevel>70)
-            return "turn on noise cancellation";
+        if (temperature>30)
+            return "turn on the AC";
+        if (temperature<18)
+            return "turn on the Heater";
         else
-            return "Sound is within normal range";
+            return "Temperature is in normal range";
     }
 
     @Override
@@ -51,4 +53,5 @@ public class SoundSensor implements Sensor {
                 "\nLast Updated: " + getLastUpdated() +
                 "\nAction: " + performAction() + "\n";
     }
+
 }
