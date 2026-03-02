@@ -1,0 +1,57 @@
+package P4ObjectOriented.sensors;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class TemparatureSensor implements Sensor {
+    private String lastupdated;
+    double temperature;
+    String location;
+
+    public TemparatureSensor(double temperature, String location) {
+        this.temperature = temperature;
+        this.location = location;
+    }
+
+    @Override
+    public String getSensorType() {
+        return "Temperature Sensor";
+    }
+
+    @Override
+    public double getReading() {
+        return temperature;
+    }
+
+    @Override
+    public String getLocation() {
+        return location;
+    }
+
+
+    @Override
+    public String getLastUpdated() {
+        lastupdated = LocalDateTime.now().format(DateTimeFormatter.ofPattern("hh:mm a"));
+        return lastupdated;
+    }
+
+    @Override
+    public String performAction() {
+        if (temperature>30)
+            return "turn on the AC";
+        if (temperature<18)
+            return "turn on the Heater";
+        else
+            return "Temperature is in normal range";
+    }
+
+    @Override
+    public String toString() {
+        return "Sensor Type: " + getSensorType() +
+                "\nReading: " + getReading() +
+                "\nlocation: " + getLocation() +
+                "\nLast Updated: " + getLastUpdated() +
+                "\nAction: " + performAction() + "\n";
+    }
+
+}
