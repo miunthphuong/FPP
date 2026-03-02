@@ -2,9 +2,7 @@ package P1ProductPricingSystem;
 
 import java.time.Month;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class P1MainTest {
+class ProductTest {
 
      static void main(String[] args) {
         Product[] products = new Product[6];
