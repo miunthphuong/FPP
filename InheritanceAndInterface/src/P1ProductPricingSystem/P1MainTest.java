@@ -5,26 +5,18 @@ import java.time.Month;
 import static org.junit.jupiter.api.Assertions.*;
 
 class P1MainTest {
-    public static double sumProducts(Product[] col) {
-        double sum = 0.0;
-        if (col == null) {
-            return 0.0;
-        }
-        for (Product p : col) {
-            if (p != null) { // avoid NPE
-                sum += p.getPrice();
-            }
-        }
-        return sum;
-    }
 
-    public static void main(String[] args) {
-        Product[] products = new Product[3];
-        products[0] = new Clothing("Product Clothing A", 100,"brand A" , 20);
-        products[1] = new Electronics("Product Clothing B", 200, Month.DECEMBER , 20);
-        products[2] = new Furniture("Product Clothing C", 300,"Material C" , 20);
+     static void main(String[] args) {
+        Product[] products = new Product[6];
+         products[0] = new Clothing("Product Clothing A", 100,"brand A" , 10);
+         products[1] = new Electronics("Product Clothing B", 200, Month.DECEMBER , 20);
+         products[2] = new Furniture("Product Clothing C", 300,"Material C" , 30);
+         products[3] = new Clothing("Product Clothing D", 400,"brand D" , 40);
+         products[4] = new Electronics("Product Clothing E", 500, Month.NOVEMBER , 50);
+         products[5] = new Furniture("Product Clothing F", 600,"Material F" , 60);
 
-        System.out.println("Product list:");
+
+        System.out.println("PRODUCT LIST:");
         for (Product p : products) {
             if (p != null){
                 System.out.println(p);
@@ -32,7 +24,7 @@ class P1MainTest {
                 }
         }
 
-        double total = sumProducts(products);
+        double total = P1Main.sumProducts(products);
         System.out.println("Total price = " + total);
     }
 }

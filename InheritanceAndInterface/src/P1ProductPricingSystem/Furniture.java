@@ -20,7 +20,7 @@ public class Furniture extends Product{
 
     @Override
     public String toString() {
-        return "Furniture -> " + super.toString() +
+        return "FURNITURE: " + super.toString() +
                 ", Material: " + material +
                 ", Shipping Cost: " + shippingCost;
     }

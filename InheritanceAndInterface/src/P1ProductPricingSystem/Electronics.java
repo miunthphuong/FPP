@@ -22,7 +22,7 @@ public class Electronics extends Product{
 
     @Override
     public String toString() {
-        return "Electronics -> " + super.toString() +
+        return "ELECTRONICS: " + super.toString() +
                 ", Warranty: " + warranty + " months" +
                 ", Warranty Cost: " + warrantyCost;
     }
