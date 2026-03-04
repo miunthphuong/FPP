@@ -1,7 +1,6 @@
-package hwsort.taska;
+package TaskA;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Secretary extends DeptEmployee {
 	private double netSalary;
@@ -19,8 +18,10 @@ public class Secretary extends DeptEmployee {
 		netSalary = super.getSalary() + 12*overtimeHours;
 		return netSalary;
 	}
-	@Override
-	public String toString() {
-		return "name=" + super.getName() + ", salary=" + netSalary + ", hireDate=" + super.getHireDate();
-	}
+//	@Override
+//	public String toString() {
+//		return "name=" + super.getName() + ", salary=" + netSalary + ", hireDate=" + super.getHireDate();
+//	}
+
+
 }

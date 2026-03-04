@@ -1,4 +1,4 @@
-package hwsort.taska;
+package TaskA;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -20,10 +20,18 @@ public class DeptEmployee {
 	public LocalDate getHireDate() {
 		return hireDate;
 	}
+
+//	@Override
+//	public String toString() {
+//		return "name=" + name + ", salary=" + salary + ", hireDate=" + hireDate;
+//	}
+
+
 	@Override
 	public String toString() {
-		return "name=" + name + ", salary=" + salary + ", hireDate=" + hireDate;
+		return name;
 	}
+
 	public void setHireDate(LocalDate hireDate) {
 		this.hireDate = hireDate;
 	}
