@@ -13,7 +13,8 @@ public class TaskEMain {
         System.out.println("After sort by Hire Date:" + Arrays.toString(data));
         Arrays.sort(data, (DeptEmployee p1, DeptEmployee p2) -> p1.getName().compareTo(p2.getName()));
         System.out.println("After sort by name:" + Arrays.toString(data));
-      //  Arrays.sort(data, (DeptEmployee p1, DeptEmployee p2) -> p1.getSalary().
+        Arrays.sort(data, (DeptEmployee p1, DeptEmployee p2) -> Double.compare(p1.getSalary(), p2.getSalary()));
+        System.out.println("After sort by salary:" + Arrays.toString(data));
 
     }
 }
