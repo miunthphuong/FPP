@@ -1,4 +1,4 @@
-
+package prob1;
 
 import java.util.Arrays;
 
@@ -127,12 +127,19 @@ public class MyStringList {
 
 	}
 
+	@Override
 	public String toString() {
+//		if (size == 0){
+//			return "[]";
+//		}
 		StringBuilder sb = new StringBuilder("[");
 		for (int i = 0; i < size - 1; ++i) {
 			sb.append(strArray[i] + ", ");
 		}
-		sb.append(strArray[size - 1] + "]");
+		if (size > 0) {
+			sb.append(strArray[size - 1]);
+		}
+		sb.append("]");
 		return sb.toString();
 	}
 
@@ -146,7 +153,76 @@ public class MyStringList {
 		 */
 		return (size == 0);
 	}
-	
+
+//	Method 1: public int indexOf(String s);
+	public int indexOf(String s) {
+		if (s == null)
+			return -1;
+		for (int i = 0; i < size; i++)
+			if (strArray[i].equals(s))
+				return i;
+		return -1;
+	}
+
+//	Method 2: public String removeAt(int index);
+	public String removeAt (int index){
+		if (index < 0 || index >= size)
+			return null;
+		for (int i = index; i < size - 1; i++){
+			strArray[i] = strArray[i + 1];
+		}
+		strArray[size - 1] = null;
+		--size;
+		return strArray[size - 1];
+	}
+
+	//	Method 3: public void clear()
+	public void clear() {
+//		Way 1
+//		Arrays.fill(strArray, null);
+
+//		Way 2
+		for (int i = 0; i < size; i++)
+			strArray[i] = null;
+		size = 0;
+	}
+
+//	Method 4: public void set(int index, String s);
+	public String[] set (int index, String s) {
+		if (index < 0 || index >= size)
+			return null;
+		String[] tmp = strArray;
+		tmp[index] = s;
+		return tmp;
+	}
+
+//	Method 5: public boolean containsAll(MyStringList other);
+	public boolean containsAll(MyStringList other) {
+		if (other == null)
+			return false;
+		for (int j = 0; j < other.size; j++) {
+			boolean found = false;
+			for (int i = 0; i < size; i++)
+				if (other.strArray[j].equals(strArray[i])) {
+					found = true;
+					break;
+				}
+			if (!found)
+				return false;
+		}
+		return true;
+	}
+
+	//	Method 6: public MyStringList subList(int start, int end);
+	public MyStringList subList(int start, int end) {
+		if (start < 0 || end > size || start >= end)
+			return null;
+		MyStringList result = new MyStringList();
+		for (int i = start; i <= end; i++)
+			result.add(strArray[i]);
+		return result;
+	}
+
 	public static void main(String[] args) {
 		MyStringList l = new MyStringList();
 		l.add("Bob");
@@ -168,5 +244,35 @@ public class MyStringList {
 		System.out.println(l.find("Susan"));
 		// String[] x = (String[]) l.clone();
 		// System.out.println(Arrays.toString(x));
+
+//	Method 1: public int indexOf(String s);
+		System.out.println(l);
+		System.out.println("The position of Steve: " + l.indexOf("Steve"));
+
+//	Method 2: public String removeAt(int index);
+		System.out.println("Array Before remove at index = 1" + ", array l is: " + l);
+		l.removeAt(1);
+		System.out.println("Array After remove at index = 1" + ", array l is: " + l);
+
+//	Method 3: public void clear()
+//		System.out.println("Array Before remove at index = 1" + ", array l is: " + l);
+//		l.clear();
+//		System.out.println("Size = " + l.size());
+//		System.out.println("Array after clear : " + l);
+
+//	Method 4: public void set(int index, String s);
+		System.out.println("Array Before update array: " + l);
+		l.set(1, "Phuong");
+		System.out.println("Array After update array: " + l);
+
+//	Method 5: public boolean containsAll(MyStringList other);
+		MyStringList l1 = new MyStringList();
+		l1.add("Phuong");
+		l1.add("Richard");
+		System.out.println( "l contains l1 : " + l.containsAll(l1));
+
+//	Method 6: public MyStringList subList(int start, int end);
+		System.out.println("Current array: " + l);
+		System.out.println( "subString(0,2) : " + l.subList(0,2));
 	}
 }
