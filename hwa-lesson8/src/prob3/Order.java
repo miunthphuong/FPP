@@ -1,4 +1,4 @@
-package lesson8.prob4;
+package prob3;
 
 public class Order {
     private String orderId;
@@ -11,12 +11,38 @@ public class Order {
         this.totalAmount = totalAmount;
     }
 
-    // getters/setters
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
 
     @Override
     public boolean equals(Object o) {
         // implement: same orderId => equal
-        return false;
+//      g) Override equals() in Order.java (consistent equals implementation required).
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return orderId.equals(order.orderId);
     }
 
     @Override
@@ -29,4 +55,6 @@ public class Order {
     public String toString() {
         return "Order{" + orderId + ", " + customerName + ", " + totalAmount + "}";
     }
+
+
 }
