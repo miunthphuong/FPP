@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="523f42d2-dc1b-430a-a16d-eb1d2bd80c95" name="Changes" comment="" />
+    <list default="true" id="523f42d2-dc1b-430a-a16d-eb1d2bd80c95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prob2/EmployeeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prob2/EmployeeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prob2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prob2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prob2/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prob2/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prob2/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prob2/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prob2/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prob2/Teacher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,34 +43,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DoublyLinkedList.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MyStringList.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OrderTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OrderTest1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.prob1.MyStringList.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/miu/Desktop/00. Projects/01. FPP/02.GIT/HWA/hwa-lesson8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DoublyLinkedList.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MyStringList.executor": "Run",
+    "Application.OrderTest.executor": "Run",
+    "Application.OrderTest1.executor": "Run",
+    "Application.prob1.MyStringList.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/miu/Desktop/00. Projects/01. FPP/02.GIT/HWA/hwa-lesson8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.DoublyLinkedList">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="prob4.DoublyLinkedList" />
       <module name="hwa-lesson8" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="prob4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="prob2.Main" />
+      <module name="hwa-lesson8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="prob2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.DoublyLinkedList" />
         <item itemvalue="Application.prob1.MyStringList" />
         <item itemvalue="Application.MyStringList" />
@@ -130,7 +152,7 @@
       <workItem from="1773107627903" duration="41000" />
       <workItem from="1773168885695" duration="4915000" />
       <workItem from="1773182790134" duration="5912000" />
-      <workItem from="1773232923211" duration="622000" />
+      <workItem from="1773232923211" duration="1903000" />
     </task>
     <servers />
   </component>

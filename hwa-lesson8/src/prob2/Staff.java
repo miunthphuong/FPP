@@ -1,6 +1,6 @@
 package prob2;
 
-public final class Staff {
+public final class Staff implements EmployeeData{
 	private String name;
 	private double salary;
 	private int numDependants;
@@ -18,5 +18,14 @@ public final class Staff {
 	}
 	public int getNumDependants() {
 		return numDependants;
+	}
+
+	@Override
+	public String toString() {
+		return "Staff{" +
+				"name='" + name + '\'' +
+				", salary=" + salary +
+				", numDependants=" + numDependants +
+				'}';
 	}
 }
