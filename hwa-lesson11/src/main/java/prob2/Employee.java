@@ -1,5 +1,7 @@
 package prob2;
 
+import java.util.Comparator;
+
 //DO NOT MODIFY IN ANY WAY
 public class Employee {
 	private String name;
@@ -43,4 +45,5 @@ public class Employee {
 		Employee e = (Employee)ob;
 		return e.ssn.equals(ssn);
 	}
+
 }

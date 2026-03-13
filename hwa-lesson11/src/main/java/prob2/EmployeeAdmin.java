@@ -1,7 +1,7 @@
 package prob2;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+import java.util.prefs.PreferenceChangeListener;
 
 public class EmployeeAdmin {
 	
@@ -12,8 +12,15 @@ public class EmployeeAdmin {
 	In addition, this list of Employees must be sorted by social security number, in ascending order (from numerically smallest to numerically largest).
 	*/
 	public static List<Employee> prepareReport(HashMap<String, Employee> table, List<String> socSecNums) {
-		//IMPLEMENT
-		return null;
+		List<Employee> result = new ArrayList<>();
+		for(String ssn : socSecNums) {
+			Employee emp = table.get(ssn);
+			if(emp != null && emp.getSalary() > 80000) {
+				result.add(emp);
+			}
+		}
+		Collections.sort(result, (e1, e2) -> e1.getSsn().compareTo(e2.getSsn()));
+		return result;
 		
 	}
 	
